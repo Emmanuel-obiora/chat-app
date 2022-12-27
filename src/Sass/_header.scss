@@ -1,0 +1,85 @@
+
+.header{
+
+    &_alike{
+        display: block;
+        width: 60%;
+        background: $White;
+        height: 1.3rem;
+        margin: 0 20%;
+        top: -5px;
+        border-radius: 0 0 40px 40px;
+        z-index: 5;
+        position: absolute;
+    }
+
+    &_top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(to right, $Light-Violet, $Light-Magenta);
+        width: 100%;
+        height: 8vh;
+        border-radius: 20px 20px 10px 10px;
+        color: $Light-Grayish-Violet;
+        padding: .7rem 0 0;
+
+        &_left{
+            display: flex;
+            align-items: center;
+            gap: .3rem;
+
+            & > img{
+                max-width: 11%;
+                border-radius: 50%;
+            }
+
+            .top-layer_left{
+                display: grid;
+
+                & > small{
+                    font-size: 10px;
+                    color: $Pale-Violet;
+                }
+            }
+            
+        }
+
+        &-right{
+            display: flex;
+            position: relative;
+            width: 25px;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+
+            .toggle{
+                position: absolute;
+                // right: 0;
+                width: 5px;
+                height: 5px;
+                background: $Light-Grayish-Violet;
+                border-radius: 50%;
+            }
+
+            .toggle::before, .toggle::after{
+                position: absolute;
+                content: "";
+                // right: 0;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: $Light-Grayish-Violet;
+            }
+
+            .toggle::before{
+                top: 8px;
+            }
+
+            .toggle::after{
+                bottom: 8px;
+            }
+        }
+    }
+}

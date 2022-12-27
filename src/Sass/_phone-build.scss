@@ -1,0 +1,106 @@
+.phone-container{
+    width: 300px;
+    border-radius: 20px;
+    padding: .5rem;
+    background: $White;
+    z-index: 10;
+    box-shadow: 10px 10px 0 14px hsl(270, 20%, 96%);
+}
+
+.phone-pack{
+    border-radius: 20px;
+    position: relative;
+    border: 1px solid $Light-Grayish-Violet;
+    background: $Light-Grayish-Violet;
+    width: 100%;
+
+    &_bottom{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        padding: .5rem;
+        width: 100%;
+        font-size: 14px;
+
+        .sender{
+            background: rgb(230, 228, 228);
+            width: max-content;
+            max-width: 75%;
+            padding: .35rem;
+            border-radius: 10px 10px 10px 3px;
+            color: $Moderate-Violet;
+            // border: 1px solid $Grayish-Blue;
+        }
+    
+        .receiver{
+            background: $White;
+            width: max-content;
+            max-width: 70%;
+            padding: .35rem;
+            margin-left: auto;
+            border-radius: 10px 10px 3px 10px;
+            color: $Desaturated-Dark-Violet;
+        }
+    
+        .chat-pay{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(to right, $Light-Magenta, $Light-Violet);;
+            width: max-content;
+            max-width: 70%;
+            padding: .35rem;
+            color: $Light-Grayish-Violet;
+            border-radius: 10px 10px 10px 3px;
+
+            & > button{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 1px solid $Very-Light-Magenta;
+            }
+        }
+    
+        .chat-images{
+            display: flex;
+            align-items: center;
+            width: 50%;
+            margin-left: auto;
+            justify-content: space-between;
+    
+            & > img{
+                max-width: 30%;
+                border-radius: 15px;
+            }
+        }
+    
+        .message-input{
+            display: flex;
+            width: 100%;
+            position: relative;
+    
+            & > input{
+                border: 1px solid $White;
+                border-radius: 15px;
+                flex-grow: 1;
+                height: 2rem;
+                padding: .5rem;
+            }
+
+            & > input::placeholder{
+                color: $Grayish-Blue;
+            }
+
+            .click-arrow{
+                position: absolute;
+                right: 5px;
+                font-size: 25px;
+                top: 5px;
+                color: $Very-Dark-Desaturated-Violet;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}

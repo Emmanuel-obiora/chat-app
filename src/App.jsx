@@ -1,11 +1,16 @@
 import React from 'react'
-import Attribution from './Components/Attribution/Attribution'
+import BackgroundCol from './Components/BackgroundCol/BackgroundCol'
+import Main from './Components/Main/Main'
+import Footer from './Components/Footer/Footer'
+import './App.css'
 
 
 const App = () => {
     return(
-        <div>
-            <Attribution />
+        <div className='app-container'>
+            <BackgroundCol />
+            <Main />
+            <Footer />
         </div>
     )
 }
