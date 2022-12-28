@@ -1,5 +1,16 @@
+.chatApp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: hsl(276, 100%, 81%);
+}
+
 .app-container{
     display: grid;
     min-height: 100%;
     margin: 0;
+    width: 100%;
+    background: hsl(0, 0%, 100%);
 }

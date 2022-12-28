@@ -5,6 +5,7 @@
     background: $White;
     z-index: 10;
     box-shadow: 10px 10px 0 14px hsl(270, 20%, 96%);
+    // transition: $transition;
 
     @media(max-width: 600px){
         width: 250px;
