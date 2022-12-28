@@ -10,7 +10,10 @@
 
     @media(max-width: 600px){
         flex-direction: column;
-        // height: 135vh;
+    }
+
+    @media(max-width: 375px){
+        height: 120vh;
     }
 
     &_bg1{

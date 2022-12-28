@@ -15,6 +15,10 @@
 
     @media(max-width: 600px){
         flex-direction: column;
-        // top: 25%;
+    }
+
+    @media(max-width: 375px){
+        top: 10%;
+        text-align: center;
     }
 }
