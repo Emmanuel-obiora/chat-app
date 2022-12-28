@@ -2,9 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 98vh;
+  height: 100vh;
   overflow: hidden;
   z-index: 3;
+}
+@media (max-width: 600px) {
+  .combine-col {
+    flex-direction: column;
+  }
 }
 .combine-col_bg1 {
   width: 400px;
@@ -15,6 +20,13 @@
   border-radius: 0 0 48% 48%;
   background: linear-gradient(to top right, hsl(264deg, 100%, 61%), hsl(293deg, 100%, 63%));
 }
+@media (max-width: 600px) {
+  .combine-col_bg1 {
+    width: 250px;
+    height: 50%;
+    margin-left: -20%;
+  }
+}
 .combine-col_bg2 {
   width: 400px;
   right: 0;
@@ -24,6 +36,11 @@
   height: 90%;
   border-radius: 48% 48% 0 0;
   background: linear-gradient(-24deg, rgb(247, 236, 238) 60%, hsl(270deg, 20%, 96%) 30%);
+}
+@media (max-width: 600px) {
+  .combine-col_bg2 {
+    display: none;
+  }
 }
 
 .main-container {
@@ -38,6 +55,13 @@
   position: absolute;
   margin: 0 auto;
   z-index: 8;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .main-container {
+    flex-direction: column;
+  }
 }
 
 .phone-container {
@@ -47,6 +71,13 @@
   background: hsl(0deg, 0%, 100%);
   z-index: 10;
   box-shadow: 10px 10px 0 14px hsl(270deg, 20%, 96%);
+}
+@media (max-width: 600px) {
+  .phone-container {
+    width: 250px;
+    padding: 0.3rem;
+    box-shadow: 8px 8px 0 10px hsl(270deg, 20%, 96%);
+  }
 }
 
 .phone-pack {
@@ -63,6 +94,13 @@
   padding: 0.5rem;
   width: 100%;
   font-size: 14px;
+}
+@media (max-width: 600px) {
+  .phone-pack_bottom {
+    font-size: 12px;
+    gap: 0.4rem;
+    padding: 0.3rem;
+  }
 }
 .phone-pack_bottom .sender {
   background: rgb(230, 228, 228);
@@ -152,6 +190,15 @@
   width: 450px;
   z-index: 10;
 }
+@media (max-width: 600px) {
+  .add-info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .add-info h1 {
   font-weight: 700;
   color: hsl(271deg, 36%, 24%);
@@ -159,6 +206,13 @@
 .add-info p {
   color: hsl(270deg, 7%, 64%);
   font-weight: 400;
+  line-height: 20px;
+}
+@media (max-width: 600px) {
+  .add-info p {
+    display: block;
+    text-align: center;
+  }
 }
 
 footer {
@@ -166,6 +220,7 @@ footer {
   padding: 0.5rem;
   bottom: 0;
   grid-column: 1/-1;
+  position: absolute;
 }
 
 .attribution {

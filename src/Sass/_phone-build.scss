@@ -5,6 +5,12 @@
     background: $White;
     z-index: 10;
     box-shadow: 10px 10px 0 14px hsl(270, 20%, 96%);
+
+    @media(max-width: 600px){
+        width: 250px;
+        padding: .3rem;
+        box-shadow: 8px 8px 0 10px hsl(270, 20%, 96%);
+    }
 }
 
 .phone-pack{
@@ -21,6 +27,12 @@
         padding: .5rem;
         width: 100%;
         font-size: 14px;
+
+        @media(max-width: 600px){
+            font-size: 12px;
+            gap: .4rem;
+            padding: .3rem;
+        }
 
         .sender{
             background: rgb(230, 228, 228);

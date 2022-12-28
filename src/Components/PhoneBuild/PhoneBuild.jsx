@@ -8,8 +8,6 @@ import { IoIosArrowDroprightCircle } from 'react-icons/io'
 
 const PhoneBuild = () => {
   return (
-    <div>
-      <span className="phone-modal"></span>
       <div className="phone-container">
         <div className="phone-pack">
           <Header />
@@ -50,7 +48,6 @@ const PhoneBuild = () => {
 
         </div>
       </div>
-    </div>
     
   )
 }
