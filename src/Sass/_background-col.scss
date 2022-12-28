@@ -1,10 +1,8 @@
 .combine-col{
     display: flex;
-    // gap: 300px;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    // width: 100%;
     overflow: hidden;
     z-index: 3;
 
@@ -34,7 +32,6 @@
 
     &_bg2{
         width: 400px;
-        // bottom: 0;
         right: 0;
         margin-top: auto;
         margin-left: auto;

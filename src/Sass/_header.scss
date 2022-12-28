@@ -56,7 +56,6 @@
 
             .toggle{
                 position: absolute;
-                // right: 0;
                 width: 5px;
                 height: 5px;
                 background: $Light-Grayish-Violet;
@@ -66,7 +65,6 @@
             .toggle::before, .toggle::after{
                 position: absolute;
                 content: "";
-                // right: 0;
                 width: 5px;
                 height: 5px;
                 border-radius: 50%;
