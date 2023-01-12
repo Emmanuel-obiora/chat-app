@@ -5,10 +5,10 @@ import '../../style.css'
 
 const Main = () => {
 return(
-    <div className='main-container'>
-    <PhoneBuild />
-    <AdditionalInfo />
-    </div>
+    <main className='main-container'>
+        <PhoneBuild />
+        <AdditionalInfo />
+    </main>
 )
 }
 
